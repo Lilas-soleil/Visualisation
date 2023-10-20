@@ -22,7 +22,7 @@ dataframes = []
 # Parcourir les noms de fichiers et lire chaque fichier dans un DataFrame
 
 for nom_fichier in noms_fichiers:
-    chemin_fichier = r"C:\Users\Sallya\Documents\Formation data-analyst\Projet visualisation\data\\" + nom_fichier
+    chemin_fichier = "data/"+ nom_fichier
     try:
         df = pd.read_csv(chemin_fichier, encoding='ISO-8859-1',sep=';')
         dataframes.append(df)
